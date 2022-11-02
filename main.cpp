@@ -58,10 +58,21 @@ int bodyParts = 0;
   
 
 for(int i = 0; i < 26; i++){
-  if (word.find(guess[i]) != string::npos){
+  if (word.find(guess[i]) != string::npos){ // if can find character in word, do the if statement
     length--;
-
-    
     }
-}
+  else{
+    bodyParts++;
+    }
+  if(bodyParts == 10){
+    cout << "LOSE";
+    break;
+  }
+
+  if(length == 0){
+    cout << "WIN";
+    break;
+  }
+  }
+
 }
