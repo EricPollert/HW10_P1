@@ -47,5 +47,21 @@ int findNumOfUniqueCharInStr(string myString) {
 
 int main() {
 
+string word;
+string guess;
 
+  cin >> word;
+  cin >> guess;
+  
+int length = findNumOfUniqueCharInStr(word);
+int bodyParts = 0;
+  
+
+for(int i = 0; i < 26; i++){
+  if (word.find(guess[i]) != string::npos){
+    length--;
+
+    
+    }
+}
 }
